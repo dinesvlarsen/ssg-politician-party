@@ -11,14 +11,14 @@ main h1 {
 	font-size: 4rem;
 	margin: 4rem 0 0 2rem;
 }
-section {
+main section {
 	display: flex;
 	flex-direction: column;
 	max-width: 300px;
 	height: auto;
 	margin: auto;
 }
-section h2 {
+main section h2 {
 	line-height: 2rem;
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
@@ -33,4 +33,8 @@ main section p {
 main section img {
 	width: 100%;
 	height: auto;
+}
+
+main section a:hover {
+	text-decoration: underline;
 }
