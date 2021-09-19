@@ -66,12 +66,12 @@ main h1 {
 }
 main p {
 	color: #272727;
-	line-height: 1.5rem;
+	line-height: var(--line-height);
 	max-width: 30rem;
 }
 main button {
 	background-color: var(--decorative-color);
-	font-family: var(--decorative-font);
+	/* font-family: var(--decorative-font); */
 	font-weight: bold;
 	font-size: 1.1rem;
 	color: #ffffff;
@@ -129,12 +129,4 @@ main .right ul li + li {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	/* background: #1c2661; */
-	/* mix-blend-mode: overlay; */
-}
-
-/* sign-up.html */
-figure img {
-	width: 100%;
-	height: auto;
 }

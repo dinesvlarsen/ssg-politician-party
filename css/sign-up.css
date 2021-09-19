@@ -15,9 +15,6 @@ h1 {
 fieldset {
 	border: none;
 }
-fieldset:last-child {
-	margin-bottom: 20rem;
-}
 
 legend {
 	font-weight: bold;
