@@ -3,6 +3,9 @@ main {
 	margin: 0 auto;
 	margin-top: 4rem;
 }
+main h1 {
+	font-weight: 900;
+}
 main figure {
 	margin-right: 2rem;
 }
@@ -19,10 +22,26 @@ main section .right p:first-child {
 }
 main section .right p:last-child {
 	font-size: 1rem;
+	max-width: 25rem;
 }
 
 article p {
 	margin: 2rem 0 2rem 2rem;
 	line-height: 3rem;
 	line-height: var(--line-height);
+}
+main aside section {
+	margin-top: 5rem;
+}
+
+main aside section a {
+	opacity: 0.4;
+}
+main aside section a:hover {
+	color: var(--text-primary-color);
+	opacity: 0.9;
+	text-decoration: underline;
+}
+main aside section img {
+	vertical-align: middle;
 }

@@ -9,10 +9,11 @@ main h1 {
 	font-size: 3rem;
 	line-height: 3.5rem;
 	margin-bottom: 1.5rem;
+	font-weight: 900;
 }
 
 main > p:nth-child(2) {
-	font-size: 2rem;
+	font-size: 1.6rem;
 	color: rgb(112, 112, 112);
 	line-height: 2rem;
 }
@@ -24,6 +25,7 @@ main figure img {
 }
 
 main figure figcaption {
+	font-size: 1rem;
 	opacity: 0.5;
 	margin-bottom: 4rem;
 }
@@ -32,24 +34,43 @@ main article p {
 	margin-bottom: 2rem;
 	line-height: var(--line-height);
 }
-aside {
+main aside section {
+	position: relative;
+	right: 30px;
+	margin-top: 5rem;
+}
+
+main aside section a {
+	opacity: 0.4;
+}
+main aside section a:hover {
+	color: var(--text-primary-color);
+	opacity: 0.9;
+	text-decoration: underline;
+}
+main aside section img {
+	vertical-align: middle;
+}
+.popular-articles {
 	max-width: 1000px;
 	margin: 0 auto;
+	margin-top: 8rem;
+	/* border-top: 2px solid rgb(223, 223, 223); */
 }
-aside h2 {
+.popular-articles h2 {
 	font-size: 1.5rem;
 	margin: 2rem 0;
 }
-aside ul {
+.popular-articles ul {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
-aside ul li {
+.popular-articles ul li {
 	max-width: 300px;
 }
 
-aside ul a:hover {
+.popular-articles ul a:hover {
 	text-decoration: underline;
 }
