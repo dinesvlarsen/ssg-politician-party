@@ -21,6 +21,7 @@ header nav {
 
 header li {
 	margin-right: 4rem;
+	display: inline-block;
 }
 
 header li:last-child a {

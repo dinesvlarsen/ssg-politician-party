@@ -1,7 +1,84 @@
 figure img {
 	width: 100%;
 }
+main {
+	margin: 0 auto;
+	max-width: 25rem;
+}
 h1 {
 	font-size: 3rem;
+	grid-area: header;
 	text-align: center;
+	/* padding-bottom: rem; */
+}
+
+fieldset {
+	border: none;
+}
+fieldset:last-child {
+	margin-bottom: 20rem;
+}
+
+legend {
+	font-weight: bold;
+	text-align: center;
+	padding-top: 2rem;
+}
+label {
+	font-size: 0.8rem;
+}
+input,
+select {
+	display: block;
+	padding: 0.7rem 0.4rem;
+	border-radius: 5px;
+	border: 2px solid #1d1d1d;
+	width: 100%;
+}
+
+input + input,
+select {
+	margin-top: 1.2rem;
+}
+
+select {
+	padding-right: 1rem;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+.left-firstname {
+	width: 48%;
+}
+.right-lastname {
+	width: 48%;
+}
+
+.left-postal {
+	width: 30%;
+}
+.right-city {
+	width: 65%;
+}
+
+.container {
+	margin-top: 1.2rem;
+}
+
+.submit-btn {
+	background-color: var(--decorative-color);
+	font-weight: bold;
+	color: #ffffff;
+	border: none;
+	padding: 0.9rem 0.4rem;
+	margin-top: 3rem;
+	font-size: 1rem;
+	border-radius: 10px;
+	box-shadow: 0px 2px 2px 0px hsla(0, 0%, 0%, 0.05);
+}
+.submit-btn:hover {
+	box-shadow: 0px 2px 5px 0px hsla(0, 0%, 0%, 0.15) inset;
+	text-decoration: underline;
+	opacity: 0.85;
 }

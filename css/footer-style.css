@@ -1,0 +1,83 @@
+footer {
+	background-color: #333333;
+	color: #fff;
+	font-size: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+		"logo logo logo logo"
+		"contact-us nav-container nav-container nav-container"
+		"social-media nav-container nav-container nav-container";
+	padding: 6rem 3rem;
+}
+.logo-container {
+	grid-area: logo;
+	align-self: end;
+}
+/* Contact us section */
+.contact-us-container {
+	grid-area: contact-us;
+	margin-left: 1rem;
+	max-width: 16rem;
+}
+
+.contact-us-container h3 {
+	font-size: 1.7rem;
+	margin-bottom: 1.5rem;
+}
+
+.contact-us-container p:nth-child(2) span {
+	margin-right: 4px;
+}
+.contact-us-container img {
+	vertical-align: middle;
+	margin-right: 0.5rem;
+	display: inline-block;
+}
+.contact-us-container p {
+	display: inline-block;
+	margin-bottom: 2rem;
+}
+.contact-us-container .probably-not-optimal-way-of-moving-this-text {
+	margin-left: 44px;
+}
+
+/* Social media section */
+.social-media-container {
+	grid-area: social-media;
+	margin-left: 1rem;
+}
+.social-media-container h4 {
+	font-size: 1.7rem;
+	margin-bottom: 1.5rem;
+}
+.social-media-container a + a {
+	margin-left: 1rem;
+}
+
+.nav-container {
+	grid-area: nav-container;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10rem;
+}
+.politics {
+	grid-area: politics;
+}
+.party {
+	grid-area: party;
+}
+.regional {
+	grid-area: regional;
+}
+.other-languages {
+	grid-area: other-languages;
+}
+li {
+	list-style: none;
+}
+
+ul {
+	display: inline-block;
+}
