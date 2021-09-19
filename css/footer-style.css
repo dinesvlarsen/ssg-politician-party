@@ -9,11 +9,14 @@ footer {
 		"logo logo logo logo"
 		"contact-us nav-container nav-container nav-container"
 		"social-media nav-container nav-container nav-container";
-	padding: 6rem 3rem;
+	padding: 2rem 3rem;
+	gap: 1rem;
 }
+/* LOGO */
 .logo-container {
 	grid-area: logo;
 	align-self: end;
+	margin-bottom: 2rem;
 }
 /* Contact us section */
 .contact-us-container {
@@ -40,7 +43,7 @@ footer {
 	margin-bottom: 2rem;
 }
 .contact-us-container .probably-not-optimal-way-of-moving-this-text {
-	margin-left: 44px;
+	margin-left: 4px;
 }
 
 /* Social media section */
@@ -52,27 +55,38 @@ footer {
 	font-size: 1.7rem;
 	margin-bottom: 1.5rem;
 }
+.social-media-container a {
+	padding-bottom: 0.2rem;
+}
+.social-media-container a:hover {
+	border-bottom: 1px solid #fff;
+	opacity: 0.7;
+}
 .social-media-container a + a {
 	margin-left: 1rem;
 }
 
+/* NAV */
 .nav-container {
 	grid-area: nav-container;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 10rem;
+	gap: 8rem;
 }
-.politics {
-	grid-area: politics;
+.nav-container ul:nth-child(2) {
+	max-width: 10rem;
 }
-.party {
-	grid-area: party;
+
+.nav-container li,
+.nav-container h4 {
+	margin-bottom: 0.5rem;
 }
-.regional {
-	grid-area: regional;
+.nav-container a {
+	color: #fff;
 }
-.other-languages {
-	grid-area: other-languages;
+.nav-container a:hover {
+	text-decoration: underline;
+	color: hsla();
 }
 li {
 	list-style: none;
