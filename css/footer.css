@@ -36,7 +36,8 @@ footer {
 	margin-right: 4px;
 }
 .contact-us-container img {
-	vertical-align: middle;
+	position: relative;
+	top: 10px;
 	margin-right: 0.5rem;
 	display: inline-block;
 }
@@ -45,7 +46,7 @@ footer {
 	margin-bottom: 2rem;
 }
 .contact-us-container .probably-not-optimal-way-of-moving-this-text {
-	margin-left: 4px;
+	margin-left: 42px;
 }
 
 /* Social media section */

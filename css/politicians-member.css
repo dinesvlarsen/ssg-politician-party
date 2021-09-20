@@ -14,13 +14,13 @@ main section {
 	flex-direction: row;
 	align-items: center;
 }
-main section .right {
+main section div {
 	max-width: 33rem;
 }
-main section .right p:first-child {
+main section p:first-child {
 	line-height: 0.6rem;
 }
-main section .right p:last-child {
+main section p:last-child {
 	font-size: 1rem;
 	max-width: 25rem;
 }
@@ -43,5 +43,6 @@ main aside section a:hover {
 	text-decoration: underline;
 }
 main aside section img {
-	vertical-align: middle;
+	position: relative;
+	top: 24px;
 }
