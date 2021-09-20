@@ -38,8 +38,9 @@ main ul {
 	gap: 1rem;
 }
 main ul figure {
+	position: relative;
+	top: 3rem;
 	display: inline-block;
-	vertical-align: middle;
 }
 main li {
 	margin: 2rem 0;
