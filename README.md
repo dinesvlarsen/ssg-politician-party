@@ -43,9 +43,9 @@ Users should be able to:
 
 ## **My process**
 
-I started with getting a general picture of what pages I'd need by checking other Norwegian politician party sites, mostly arbeiderpartiet.no and hoyre.no. And kept these sites close so I could reference back to them when needed.
+I started with getting a general picture of what pages I'd need by checking other Norwegian politician party sites, mostly arbeiderpartiet.no and hoyre.no. And kept referencing back to them when needed.
 
-After getting a general picture of how the sites are set up, I decided to make some sketches in figma, where I pasted the requirements and set up a list of the general pages I'd need like:
+After getting a general picture of how other political sites are set up, I decided to make some sketches in figma, where I pasted the requirements and set up a list of the general pages I'd need like:
 
 - Landing page
 - About the party page
@@ -55,22 +55,28 @@ After getting a general picture of how the sites are set up, I decided to make s
 - What we have already done / accomplished
 - Members of the party
 
-## **The start**
+Once I had some sketches decided, I focused on adding html content, before I turned to styling. So on every page I would see what content was supposed to be on the page, create it, and then turn to styling.
+I focused on one page at the time, so first I tackled the landing page, then I worked on the sign-up page etc. After working on the sign-up page for a bit I realized the css file will get really long, so I decided to branch out and make one css file for each page.
 
-After getting a general list, I started sketching out the landing page, I decided pretty early that I wanted it to have a video background, and tried to find some resources on the web explaining how this is accomplished, found a youtube video where he basically attaches it to a container which he gives the position absolute, so you can place other content on top of it.
+Also wanted to keep the same footer and nav, so made an universal stylesheet for those and copy pasted the html on each page I worked on.
 
 ### **Built with**
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Mobile first workflow
+- CSS Grid
+- Desktop first approach
 
 ### **What I learned**
 
-I realized that text can be a bit tricky to have match up in a way so it doesn't push other content out of its placement, if it didn't match up the buttons wouldn't end up properly aligned.
+- I learnt that to be able to use the position: relative property you need to add a unit behind it, I was adding values without specifying what unit I want. Resulting in the content not moving (kind of spent an awkward amount of time before I figured this out).
 
-I also tried to find a way to reduce the code I've used on the hover effects:
+- Also learnt that you should avoid vertical-align, since it's a table styling property.
+
+- You don't need .left .right classes, since wherever you are specifying this, you already know that there will be an order, so you can use css Pseudo-classes.
+
+-
 
 ```css
 #sedan button:hover {
