@@ -35,18 +35,17 @@ footer {
 .contact-us-container p:nth-child(2) span {
 	margin-right: 4px;
 }
+
+.contact-us-container ul li {
+	margin-bottom: 1rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
 .contact-us-container img {
 	position: relative;
-	top: 10px;
-	margin-right: 0.5rem;
-	display: inline-block;
-}
-.contact-us-container p {
-	display: inline-block;
-	margin-bottom: 2rem;
-}
-.contact-us-container .probably-not-optimal-way-of-moving-this-text {
-	margin-left: 42px;
+	top: 2px;
 }
 
 /* Social media section */
