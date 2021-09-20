@@ -1,10 +1,12 @@
 figure img {
 	width: 100%;
 }
+
 main {
 	margin: 0 auto;
 	max-width: 25rem;
 }
+
 h1 {
 	font-size: 3rem;
 	grid-area: header;
@@ -21,9 +23,11 @@ legend {
 	text-align: center;
 	padding-top: 2rem;
 }
+
 label {
 	font-size: 0.8rem;
 }
+
 input,
 select {
 	display: block;
@@ -41,13 +45,16 @@ select {
 select {
 	padding-right: 1rem;
 }
+
 .container {
 	display: flex;
 	justify-content: space-between;
 }
+
 .left-firstname {
 	width: 48%;
 }
+
 .right-lastname {
 	width: 48%;
 }
@@ -55,6 +62,7 @@ select {
 .left-postal {
 	width: 30%;
 }
+
 .right-city {
 	width: 65%;
 }
@@ -74,6 +82,7 @@ select {
 	border-radius: 10px;
 	box-shadow: 0px 2px 2px 0px hsla(0, 0%, 0%, 0.05);
 }
+
 .submit-btn:hover {
 	box-shadow: 0px 2px 5px 0px hsla(0, 0%, 0%, 0.15) inset;
 	text-decoration: underline;

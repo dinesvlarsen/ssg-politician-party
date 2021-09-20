@@ -3,23 +3,29 @@ main {
 	margin: 0 auto;
 	margin-top: 4rem;
 }
+
 main h1 {
 	font-weight: 900;
 }
+
 main figure {
 	margin-right: 2rem;
 }
+
 main section {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
+
 main section div {
 	max-width: 33rem;
 }
+
 main section p:first-child {
 	line-height: 0.6rem;
 }
+
 main section p:last-child {
 	font-size: 1rem;
 	max-width: 25rem;
@@ -30,6 +36,7 @@ article p {
 	line-height: 3rem;
 	line-height: var(--line-height);
 }
+
 main aside section {
 	margin-top: 5rem;
 }
@@ -37,11 +44,13 @@ main aside section {
 main aside section a {
 	opacity: 0.4;
 }
+
 main aside section a:hover {
 	color: var(--text-primary-color);
 	opacity: 0.9;
 	text-decoration: underline;
 }
+
 main aside section img {
 	position: relative;
 	top: 24px;

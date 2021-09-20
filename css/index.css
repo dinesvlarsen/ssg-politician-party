@@ -1,6 +1,7 @@
 .wrapper {
 	padding: 0 5rem;
 }
+
 .container {
 	display: flex;
 	align-items: center;
@@ -24,16 +25,19 @@ main {
 	border-radius: 10px;
 	padding: 3rem 0 3.75rem 2em;
 }
+
 main h1 {
 	color: #2a2d2f;
 	font-size: 3rem;
 	margin-bottom: 0.35rem;
 }
+
 main p {
 	color: #272727;
 	line-height: var(--line-height);
 	max-width: 30rem;
 }
+
 main button {
 	background-color: var(--decorative-color);
 	/* font-family: var(--decorative-font); */
@@ -46,9 +50,11 @@ main button {
 	border-radius: 10px;
 	margin-top: 4.125rem;
 }
+
 main button:hover {
 	cursor: pointer;
 }
+
 main .left a:last-child {
 	display: block;
 	font-size: 0.8rem;
@@ -59,6 +65,7 @@ main .left a:last-child {
 	color: #232323;
 	opacity: 0.7;
 }
+
 main .right {
 	margin-top: 4rem;
 	margin-left: 8rem;
@@ -67,17 +74,21 @@ main .right {
 main .right a {
 	border-bottom: 1px solid transparent;
 }
+
 main .right li {
 	list-style: none;
 	display: inline-block;
 }
+
 main .right a:hover {
 	filter: invert(0) sepia(1) saturate(1) hue-rotate(0deg) brightness(0.2);
 	border-bottom: 1px solid black;
 }
+
 main .right ul li + li {
 	margin-left: 1rem;
 }
+
 .showcase video {
 	position: absolute;
 	top: 0;
@@ -86,12 +97,4 @@ main .right ul li + li {
 	height: 100%;
 	object-fit: cover;
 	opacity: 0.6;
-}
-
-.overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 }

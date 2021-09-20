@@ -34,6 +34,7 @@ main article p {
 	margin-bottom: 2rem;
 	line-height: var(--line-height);
 }
+
 main aside section {
 	position: relative;
 	right: 30px;
@@ -43,26 +44,31 @@ main aside section {
 main aside section a {
 	opacity: 0.4;
 }
+
 main aside section a:hover {
 	color: var(--text-primary-color);
 	opacity: 0.9;
 	text-decoration: underline;
 }
+
 main aside section img {
 	position: relative;
 	top: 24px;
 	/* vertical-align: middle; */
 }
+
 .popular-articles {
 	max-width: 1000px;
 	margin: 0 auto;
 	margin-top: 8rem;
 	/* border-top: 2px solid rgb(223, 223, 223); */
 }
+
 .popular-articles h2 {
 	font-size: 1.5rem;
 	margin: 2rem 0;
 }
+
 .popular-articles ul {
 	display: flex;
 	justify-content: space-between;

@@ -6,11 +6,13 @@ main {
 	justify-items: center;
 	gap: 3rem;
 }
+
 main h1 {
 	grid-column: 1/4;
 	font-size: 4rem;
 	margin: 4rem 0 0 2rem;
 }
+
 main section {
 	display: flex;
 	flex-direction: column;
@@ -18,18 +20,21 @@ main section {
 	height: auto;
 	margin: auto;
 }
+
 main section h2 {
 	line-height: 2rem;
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
 	font-weight: 900;
 }
+
 main section p {
 	font-size: 1rem;
 	color: #000000;
 
 	opacity: 0.6;
 }
+
 main section img {
 	width: 100%;
 	height: auto;

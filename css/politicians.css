@@ -1,15 +1,18 @@
 main {
 	margin: 0 auto;
 }
+
 main h1 {
 	text-align: center;
 	font-size: 4rem;
 	margin-bottom: 1.5rem;
 }
+
 section {
 	margin: 0 auto;
 	max-width: 1440px;
 }
+
 input {
 	display: block;
 	background: url(../assets/politicians/search-icon.png);
@@ -29,6 +32,7 @@ input {
 	margin: 2rem auto;
 	font-size: 1rem;
 }
+
 main ul {
 	display: grid;
 	grid-template-columns: auto auto;
@@ -37,14 +41,17 @@ main ul {
 	margin: 0 auto;
 	gap: 1rem;
 }
+
 main ul figure {
 	position: relative;
 	top: 3rem;
 	display: inline-block;
 }
+
 main li {
 	margin: 2rem 0;
 }
+
 li .information {
 	position: relative;
 	bottom: 20px;
@@ -52,16 +59,19 @@ li .information {
 	display: inline-block;
 	margin-left: 1rem;
 }
+
 main li h2 {
 	font-size: 1.5rem;
 	font-weight: 900;
 }
+
 main li p {
 	max-width: 15rem;
 	float: left;
 
 	font-size: 1.2rem;
 }
+
 main a:hover {
 	color: rgb(85, 85, 85);
 	text-decoration: underline;
