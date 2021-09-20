@@ -59,16 +59,6 @@ After getting a general picture of how the sites are set up, I decided to make s
 
 After getting a general list, I started sketching out the landing page, I decided pretty early that I wanted it to have a video background, and tried to find some resources on the web explaining how this is accomplished, found a youtube video where he basically attaches it to a container which he gives the position absolute, so you can place other content on top of it.
 
-This is the approach I chose to go for, what I found challenging here was editing the video so the content I would add on top wouldn't become unreadable. So I tried first to create a secondary image that I would place over it, but the attempt failed. I then resulted in trying to add a color with an alpha code, so it would become see through, but was not satisfied with how it looked. Eventually I just turned down the opacity and for some reason it looked pretty good so I decided to run with it.
-
-All while working on the landing page I kept iterating design ideas, this is how I ended up landing on having a transparent nav, which originally was not my idea (wanted to have one with a white background, but it looked really bad on the landing page).
-
-Once the video and content was placed, I noticed the box with the heading and paragraph looked a bit empty on the right, so decided to add some media icon links to fill the space and make it more appealing.
-
-The approach I took on the video was
-
-once I had a
-
 ### **Built with**
 
 - Semantic HTML5 markup
