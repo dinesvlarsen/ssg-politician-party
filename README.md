@@ -76,97 +76,30 @@ Also wanted to keep the same footer and nav, so made an universal stylesheet for
 
 - You don't need .left .right classes, since wherever you are specifying this, you already know that there will be an order, so you can use css Pseudo-classes.
 
--
+- It is possible to change all occurrences across multiple files by doing ctrl + shift + H, which got super handy when I wanted to refactor the footer on nav, since those elements have been copied and pasted across several files. Sadly I figured this out a bit late.
 
-```css
-#sedan button:hover {
-	background-color: transparent;
-	color: hsl(0, 0%, 95%);
-}
-#suv button:hover {
-	background-color: transparent;
-	color: hsl(0, 0%, 95%);
-}
+- With css different css selectors you don't really need classes to get to elements anymore.
 
-#luxury button:hover {
-	background-color: transparent;
-	color: hsl(0, 0%, 95%);
-}
-```
+- Need to pay more attention to when I code, and how it formats, even tho I used prettier to format, it can format things weirdly if I don't pay attention.
 
-By applying these:
+- CSS grid is incredibly useful and powerful when used correctly.
 
-```css
-main button:hover {
-	background-color: transparent;
-	color: hsl(0, 0%, 95%);
-}
+- I should definitely learn to be at 100% zoom when working in figma or other design programs, because a lot of the pictures and planned sizes was way too big when I implemented them in real practice.
 
-section button:hover {
-	background-color: transparent;
-	color: hsl(0, 0%, 95%);
-}
-
-section:last-child:hover {
-	background-color: transparent;
-	color: hsl(0, 0%, 95%);
-}
-```
-
-But sadly none of them worked, and I'm not sure why.
-
-Another redundancy I tried to eliminate was the border radiuses, which I've applied to the start first section and last section, instead of just getting it to work on the parent container:
-
-```css
-#sedan {
-	background-color: hsl(31, 77%, 52%);
-	border-radius: 10px 10px 0 0;
-}
-
-#luxury {
-	background-color: hsl(179, 100%, 13%);
-	border-radius: 0 0 10px 10px;
-}
-```
-
-I tried to fix it by setting border-radius on the parent container and set the overflow property to hidden. And this works when the component is in its horizontal layout, but for some weird reason not in the vertical one.
-
-```css
-main {
-	border-radius: 10px;
-	overflow: hidden;
-}
-```
-
-![](screenshots/overflow-hidden-not-working-on-mobile-view.png)
-
-Not sure what causes this, but as I'm writing this I realize that only fixing this issue, will reduce a bit of code at least, so I've chosen to leave the border-radius and overflow on the main container, and apply an extra border radius to the luxury card section, which I then remove again when it enters the horizontal layout screen dimension.
-
-```css
-#luxury {
-  border-radius: 0 0 10px 10px;
-
-  @media only screen and (min-width: 857px) {
-
-  #luxury {
-    border-radius: 0;
-  }
-}
-```
+- Need to pay attention to when I abandon a way of styling or style, so I don't end up with useless css that doesn't do anything.
 
 ### Continued development
 
-I thought I was spot on with the design, until I took a screenshot and placed it over the design I had in figma, and noticed some my parts are a lot bigger than the design. So I guess Id like to improve my attention to detail? I'm not sure how relevant having it pixel perfect is, and maybe in this day and age of having so many different screen sizes you can't really make it pixel perfect to the design?
+On my future projects and this one, I want to implement responsiveness, cause it kind of bugs me that this site cant be viewed on any device too small.
 
-I also want to continue to be conscious of semantics, I feel like I'm getting better with them, and tweaking and moving things with css is getting a lot simpler, so these little challenges are definitely working.
-
-I've written this on every project, but I STILL want to learn CSS grid, haven't gotten around to it yet, probably because I'm getting so comfortable with flex-box, but I know flex-box is not the tool for layouts, and is mostly supposed to be used for alignment.
+I also want to get more aquatinted with CSS Grid, so I can pull it out without having to spend to much time looking up what the difference properties I can use are.
 
 ## Author
 
-- Frontend Mentor - [@Dinesvlarsen](https://www.frontendmentor.io/profile/dinesvlarsen)
 - Twitter - [@Dinesvlarsen](https://twitter.com/Dinesvlarsen)
 
 ## Acknowledgments
 
-I got the tip of trying out overflow: hidden by @Kaleem420#9453 on the Jonas Schmedtmann discord server. So thanks for that🙏
+Travesty Media - because of the youtube video I used to figure out how to add a full-screen video as a background.
+
+Css-tricks.com - because of both their css grid and flexbox run down.
