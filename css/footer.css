@@ -4,7 +4,7 @@ footer {
 	font-size: 1rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: auto 1fr 1fr;
+	grid-template-rows: auto;
 	grid-template-areas:
 		"logo logo logo logo"
 		"contact-us nav-container nav-container nav-container"
@@ -12,7 +12,8 @@ footer {
 	padding: 7rem 3rem;
 	margin-top: 15rem;
 	padding-left: 10rem;
-	gap: 1rem;
+	column-gap: 4rem;
+	row-gap: 3rem;
 }
 
 /* LOGO */
@@ -34,10 +35,6 @@ footer {
 	margin-bottom: 1.5rem;
 }
 
-.contact-us-container p:nth-child(2) span {
-	margin-right: 4px;
-}
-
 .contact-us-container ul li {
 	margin-bottom: 1rem;
 	display: flex;
@@ -50,6 +47,10 @@ footer {
 	top: 2px;
 }
 
+.contact-us-container ul li:first-child p {
+	margin-left: 4px;
+}
+
 /* Social media section */
 .social-media-container {
 	grid-area: social-media;
@@ -59,10 +60,6 @@ footer {
 .social-media-container h4 {
 	font-size: 1.7rem;
 	margin-bottom: 1.5rem;
-}
-
-.social-media-container a {
-	padding-bottom: 0.2rem;
 }
 
 .social-media-container a:hover {
@@ -79,7 +76,8 @@ footer {
 	grid-area: nav-container;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 8rem;
+	column-gap: 9rem;
+	row-gap: 3rem;
 }
 
 .nav-container ul:nth-child(2) {
@@ -97,13 +95,4 @@ footer {
 
 .nav-container a:hover {
 	text-decoration: underline;
-	color: hsla();
-}
-
-li {
-	list-style: none;
-}
-
-ul {
-	display: inline-block;
 }

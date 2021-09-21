@@ -1,21 +1,3 @@
-.wrapper {
-	padding: 0 5rem;
-}
-
-.container {
-	display: flex;
-	align-items: center;
-}
-
-main .left a button:hover {
-	box-shadow: 0px 2px 5px 0px hsla(0, 0%, 0%, 0.15) inset;
-}
-
-main .left a:hover {
-	text-decoration: underline;
-	opacity: 0.85;
-}
-
 main {
 	position: relative;
 	margin: 6rem 0 0 2rem;
@@ -23,7 +5,7 @@ main {
 	max-width: 40rem;
 	background-color: #deedea79;
 	border-radius: 10px;
-	padding: 3rem 0 3.75rem 2em;
+	padding: 3rem;
 }
 
 main h1 {
@@ -36,56 +18,69 @@ main p {
 	color: #272727;
 	line-height: var(--line-height);
 	max-width: 30rem;
+	margin-bottom: 1rem;
 }
 
-main button {
+main section {
+	display: flex;
+	align-items: center;
+}
+
+main section aside a:first-child {
 	background-color: var(--decorative-color);
-	/* font-family: var(--decorative-font); */
 	font-weight: bold;
 	font-size: 1.1rem;
 	color: #ffffff;
 	stroke: 0;
 	border-style: none;
-	padding: 0.6em 2.5em;
+	padding: 0.6em 2.5em 0.7em;
 	border-radius: 10px;
-	margin-top: 4.125rem;
 }
 
-main button:hover {
-	cursor: pointer;
+main section aside a:first-child:hover {
+	box-shadow: 0px 2px 5px 0px hsla(0, 0%, 0%, 0.15) inset;
 }
 
-main .left a:last-child {
+main section aside a:hover {
+	text-decoration: underline;
+	opacity: 0.85;
+}
+
+main section aside a:last-child {
 	display: block;
 	font-size: 0.8rem;
 	font-family: var(--decorative-font);
 	font-weight: 800;
 	margin-left: 3.5em;
-	margin-top: 0.5rem;
+	margin-top: 1.5rem;
 	color: #232323;
 	opacity: 0.7;
 }
 
-main .right {
-	margin-top: 4rem;
-	margin-left: 8rem;
+main section aside a:last-child:hover {
+	opacity: 1;
 }
 
-main .right a {
+main ul {
+	margin-bottom: 3rem;
+	margin-left: 8rem;
+	margin-top: 4rem;
+}
+
+main ul li a {
 	border-bottom: 1px solid transparent;
 }
 
-main .right li {
-	list-style: none;
+main ul li {
 	display: inline-block;
 }
 
-main .right a:hover {
+main ul a:hover {
 	filter: invert(0) sepia(1) saturate(1) hue-rotate(0deg) brightness(0.2);
 	border-bottom: 1px solid black;
 }
 
-main .right ul li + li {
+main ul li + li {
 	margin-left: 1rem;
 }
 
