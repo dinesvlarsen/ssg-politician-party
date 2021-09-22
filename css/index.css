@@ -26,6 +26,10 @@ main section {
 	align-items: center;
 }
 
+main section aside a {
+	text-align: center;
+}
+
 main section aside a:first-child {
 	background-color: var(--decorative-color);
 	font-weight: bold;
@@ -51,7 +55,7 @@ main section aside a:last-child {
 	font-size: 0.8rem;
 	font-family: var(--decorative-font);
 	font-weight: 800;
-	margin-left: 3.5em;
+	/* margin-left: 3.5em; */
 	margin-top: 1.5rem;
 	color: #232323;
 	opacity: 0.7;
@@ -82,6 +86,31 @@ main ul a:hover {
 
 main ul li + li {
 	margin-left: 1rem;
+}
+
+aside:nth-child(3) {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	text-align: center;
+	margin: 0 auto;
+	z-index: 2;
+	opacity: 0.15;
+}
+aside:nth-child(3):hover {
+	opacity: 0.8;
+}
+
+aside p {
+	font-size: 1rem;
+	font-weight: 900;
+	margin-bottom: 0.2rem;
+}
+
+aside a img {
+	width: 8rem;
+	height: 3rem;
+	fill: red;
 }
 
 .showcase video {
