@@ -8,7 +8,7 @@ main {
 main h1 {
 	font-size: 3rem;
 	line-height: 3.5rem;
-	margin-bottom: 1.5rem;
+	margin-bottom: 0.5rem;
 	font-weight: 900;
 }
 
@@ -21,7 +21,7 @@ main > p:nth-child(2) {
 main figure img {
 	width: 100%;
 	height: auto;
-	margin-top: 4rem;
+	margin-top: 2.5rem;
 }
 
 main figure figcaption {
@@ -60,9 +60,11 @@ main aside section img {
 	margin: 0 auto;
 	margin-top: 8rem;
 }
+
 .popular-articles img {
 	margin-top: 2rem;
 }
+
 .popular-articles h3 {
 	font-size: 1.5rem;
 }
