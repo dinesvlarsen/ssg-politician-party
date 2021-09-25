@@ -1,8 +1,8 @@
 :root {
-	--decorative-font: "M PLUS Rounded 1c", sans-serif;
-	--body-font: "Open Sans", sans-serif;
+	--decorative-font: 'M PLUS Rounded 1c', sans-serif;
+	--body-font: 'Open Sans', sans-serif;
 	--text-primary-color: #1a1b1b;
 	--decorative-color: #fb6220;
-	--body-font-size: 1.25rem;
+	--body-font-size: 1.1rem;
 	--line-height: 1.8rem;
 }
